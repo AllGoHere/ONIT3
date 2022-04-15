@@ -1,0 +1,33 @@
+﻿@model Laba4._5.Storage.Entity.Client
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="wIdth=device-wIdth" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Edit", "Client", FormMethod.Post))
+        {
+            <input Id="ClientId" name="ClientId" type="hIdden" value="@Model.Id" />
+            <label>Имя:</label>
+            <input Id="name" type="text" name="name" value="@Model.name" /> <br />
+            <label>Фамилия:</label>
+            <input Id="lastname" type="text" name="lastname" value="@Model.lastname." /> <br />
+            <label>Количестов ночей:</label>
+            <input Id="nights" type="text" name="nights" value="@Model.nights" /> <br />
+            <label>в каком номере:</label>
+            <input Id="number" type="text" name="number" value="@Model.number" /> <br />
+            <input type="submit" value="Редактировать клиентов" /><br /><br />
+        }
+        <div>
+            <a href="/Hotel/ShowHotels">Вернутся к списку клиентов</a><br /><br />
+        </div>
+    </div>
+</body>
+</html>
+

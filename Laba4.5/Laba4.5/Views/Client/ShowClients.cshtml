@@ -1,0 +1,57 @@
+﻿@model Laba4._5.Managers.Perenos
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <
+    <meta name="viewport" content="wIdth=device-wIdth" />
+    <title>ShowCHnumber</title> />
+</head>
+<body>
+    <h1>Клиент</h1>
+    <table border="1" wIdth="100%" cellpadding="5">
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Количество ночей</th>
+            <th>В каком номере</th>
+            <th></th>
+            <th></th>
+            
+        </tr>
+        @{
+            foreach (var item in Laba4._5.Managers.Perenos.clients)
+            {
+                @if (item.NumberId == Laba4._5.Managers.Perenos.Guid)
+                {
+                    <tr>
+                        <td>@item.name</td>
+                        <td>@item.lastname</td>
+                        <td>@item.nights</td>
+                        <td>@item.number</td>
+                        <td><a href="/Client/EditClient/@item.Id"> "Редактировать"</a></td>
+
+                        <td><a href="/Client/kick/@item.Id">Удалить </a></td>
+                    </tr>
+                }
+            }
+        }
+    </table>
+    @using (Html.BeginForm("CreateClient", "Client"))
+    {
+        <div>
+            <input type="submit" value="Добавить клиента" />
+
+        </div>
+    }
+    <div>
+        <a href="/Client/ShowAllClients">Показать всех клиентов</a>
+    </div>
+    <div>
+        <a href="/Hotel/ShowHotel">Вернутся к списку Отелей</a>
+    </div>
+</body>
+</html>

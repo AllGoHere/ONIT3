@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba4.5", "Laba4.5\Laba4.5.csproj", "{94123F3F-0BF0-47CE-9412-D557B2561214}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{511957CD-2B70-4ED0-A89C-9375001DBF64}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94123F3F-0BF0-47CE-9412-D557B2561214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94123F3F-0BF0-47CE-9412-D557B2561214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94123F3F-0BF0-47CE-9412-D557B2561214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94123F3F-0BF0-47CE-9412-D557B2561214}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

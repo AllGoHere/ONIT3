@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\prosy\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\prosy\\.nuget\\packages"
+    ]
+  }
+}

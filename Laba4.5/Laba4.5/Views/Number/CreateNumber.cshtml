@@ -1,0 +1,27 @@
+﻿@model Laba4._5.Managers.Numbers.CreateOrUpdateNumbers
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="wIdth=device-wIdth" />
+    <title></title>
+</head>
+<body>
+    @using (Html.BeginForm("Create", "Number", FormMethod.Post))
+    {
+        <label>На каком этаже</label>
+        <input Id="floor" type="text" name="floor" /> <br />
+        <label>Номер на двери:</label>
+        <input Id="nomer" type="text" name="nomer" /> <br />
+
+
+        <input type="submit" value="Добавить новый номер" /><br /><br />
+    }
+    <div>
+        <a href="/Number/ShowNumber">Вернуться к списку отеля</a><br /><br />
+    </div>
+</body>
+</html>

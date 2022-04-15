@@ -1,0 +1,54 @@
+﻿@model Laba4._5.Managers.Perenos
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <
+    <meta name="viewport" content="wIdth=device-wIdth" />
+    <title>ShowCHnumber</title> />
+</head>
+<body>
+    <h1>Персонал</h1>
+    <table border="1" wIdth="100%" cellpadding="5">
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Должность</th>
+            <th></th>
+            <th></th>
+            
+        </tr>
+        @{
+            foreach (var item in Laba4._5.Managers.Perenos.personals)
+            {
+                @if (item.HotelId == Laba4._5.Managers.Perenos.Guid)
+                {
+                    <tr>
+                        <td>@item.name</td>
+                        <td>@item.lastname</td>
+                        <td>@item.dolzhnost</td>
+                        <td><a href="/Personal/EditPersonal/@item.Id"> "Редактировать"</a></td>                       
+                        <td><a href="/Personal/kick/@item.Id">"Удалить" </a></td>
+                    </tr>
+                }
+            }
+        }
+    </table>
+    @using (Html.BeginForm("CreatePersonal", "Personal"))
+    {
+        <div>
+            <input type="submit" value="Добавить персонал" />
+
+        </div>
+    }
+    <div>
+        <a href="/Personal/ShowAllPersonals">Показать весь персонал</a>
+    </div>
+    <div>
+        <a href="/Hotel/ShowHotel">Вернутся к списку Отелей</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿@model Laba4._5.Managers.Perenos
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <
+    <meta name="viewport" content="wIdth=device-wIdth" />
+    <title>ShowCHnumber</title> />
+</head>
+<body>
+    <h1>Характеристика номеров</h1>
+    <table border="1" wIdth="100%" cellpadding="5">
+        <tr>
+            <th>Количество комнат</th>
+            <th>Количество спальных мест</th>
+            <th></th>
+            <th></th>
+            <th></th>
+
+        </tr>
+        @{
+            foreach (var item in Laba4._5.Managers.Perenos.chnumbers)
+            {
+                
+                    <tr>
+                        <td>@item.rooms</td>
+                        <td>@item.sleep</td>
+                        <td><a href="/CHnumber/EditCHnumber/@item.Id"> "Редактировать"</a></td>
+
+                        <td><a href="/CHnumber/Kick/@item.Id">Удалить </a></td>
+                        <td><a href="/Number/ShowNumbers/@item.Id"> Номера</a></td>
+                    </tr>
+                
+            }
+        }
+    </table>
+    @using (Html.BeginForm("Create", "CHnumber"))
+    {
+        <div>
+            <input type="submit" value="Добавить характеристику" />
+
+        </div>
+    }
+    <div>
+        <a href="/CHnumber/ShowAllCHnumbers">Показать всю характеристику</a>
+    </div>
+    <div>
+        <a href="/Hotel/ShowHotel">Вернутся к списку Отелей</a>
+    </div>
+</body>
+</html>

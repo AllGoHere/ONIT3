@@ -1,0 +1,30 @@
+﻿@model Laba4._5.Managers.Personals.CreateOrUpdatePersonals
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="wIdth=device-wIdth" />
+    <title></title>
+</head>
+<body>
+    @using (Html.BeginForm("Create", "Personal", FormMethod.Post))
+    {
+        <label>Имя</label>
+        <input Id="name" type="text" name="name" /> <br />
+        <label>Фамилия:</label>
+        <input Id="lastname" type="text" name="lastname" /> <br />
+        <label>Должность</label>
+        <input Id="dolzhnost" type="text" name="dolzhnost" /> <br />
+        
+
+
+        <input type="submit" value="Добавить ноый персонал" /><br /><br />
+    }
+    <div>
+        <a href="/Personal/ShowPersonals">Вернуться к списку персонала</a><br /><br />
+    </div>
+</body>
+</html>

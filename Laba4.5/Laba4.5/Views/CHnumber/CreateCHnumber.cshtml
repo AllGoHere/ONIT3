@@ -1,0 +1,27 @@
+﻿@model Laba4._5.Managers.CHnumbers.CreateOrUpdateCHnumbers
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="wIdth=device-wIdth" />
+    <title></title>
+</head>
+<body>
+    @using (Html.BeginForm("Create", "Chnumber", FormMethod.Post))
+    {
+        <label>Количество комнат</label>
+        <input Id="rooms" type="text" name="rooms" /> <br />
+        <label>Количество спальных мест:</label>
+        <input Id="sleep" type="text" name="sleep" /> <br />
+        
+
+        <input type="submit" value="Добавить новую характеристику" /><br /><br />
+    }
+    <div>
+        <a href="/Chnumber/ShowCHnumber">Вернуться к списку характеристики</a><br /><br />
+    </div>
+</body>
+</html>

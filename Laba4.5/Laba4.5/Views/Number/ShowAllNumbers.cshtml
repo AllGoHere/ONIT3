@@ -1,0 +1,47 @@
+﻿@model Laba4._5.Managers.Perenos
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <
+    <meta name="viewport" content="wIdth=device-wIdth" />
+    <title>ShowCHnumber</title> />
+</head>
+<body>
+    <h1>Номера</h1>
+    <table border="1" wIdth="100%" cellpadding="5">
+        <tr>
+            <th>На каком этаже</th>
+            <th>Номер двери</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        @{
+            foreach (var item in Laba4._5.Managers.Perenos.number)
+            {
+               
+                    <tr>
+                        <td>@item.floor</td>
+                        <td>@item.nomer</td>
+                        <td><a href="/Number/EditNumber/@item.Id"> "Редактировать"</a></td>
+                        <td><a href="/Client/ShowClients/@item.Id"> Клиенты</a></td>
+                        <td><a href="/Number/Kick/@item.Id">Удалить </a></td>
+                    </tr>
+                
+            }
+        }
+    </table>
+   
+    <div>
+        <a href="/Number/ShowAllNumbers">Показать все номера</a>
+    </div>
+    <div>
+        <a href="/Hotel/ShowHotel">Вернутся к списку Отелей</a>
+    </div>
+</body>
+</html>

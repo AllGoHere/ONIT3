@@ -1,0 +1,32 @@
+﻿@model Laba4._5.Storage.Entity.Hotel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="wIdth=device-wIdth"/>
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Edit", "Hotel", FormMethod.Post))
+        {
+            <input Id="HotelId" name="HotelId" type="hIdden" value="@Model.Id" />
+            <label>Название отеля:</label>
+            <input Id="name" type="text" name="name" value="@Model.name" /> <br />
+            <label>Количество этажей в отеле:</label>
+            <input Id="floors" type="text" name="floors" value="@Model.floors." /> <br />
+            <label>Количестов номеров:</label>
+            <input Id="KolNum" type="text" name="KolNum" value="@Model.KolNum" /> <br />
+            <label>Количестов сотрудников:</label>
+            <input Id="kolsot" type="text" name="kolsot" value="@Model.kolsot" /> <br />
+            <input type="submit" value="Редактировать отель" /><br /><br />
+        }
+        <div>
+            <a href="/Hotel/ShowHotels">Вернутся к списку отелей</a><br /><br />
+        </div>
+     </div>
+</body>
+</html>

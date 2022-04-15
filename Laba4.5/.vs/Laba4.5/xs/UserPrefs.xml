@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{94123F3F-0BF0-47CE-9412-D557B2561214}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Laba4.5/Startup.cs">
+    <Files>
+      <File FileName="Laba4.5/Startup.cs" Line="35" Column="75" />
+      <File FileName="Laba4.5/Views/Client/ShowClients.cshtml" Line="1" Column="1" />
+      <File FileName="Laba4.5/Controllers/ClientController.cs" Line="1" Column="1" />
+      <File FileName="Laba4.5/Views/CHnumber/AfterShowCHnumber.cshtml" Line="1" Column="1" />
+      <File FileName="Laba4.5/Views/CHnumber/CreateCHnumber.cshtml" Line="1" Column="1" />
+      <File FileName="Laba4.5/Views/CHnumber/EditCHnumber.cshtml" Line="1" Column="1" />
+      <File FileName="Laba4.5/Views/CHnumber/ShowAllCHnumbers.cshtml" Line="1" Column="1" />
+      <File FileName="Laba4.5/Views/CHnumber/ShowCHnumber.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Laba4.5" expanded="True">
+            <Node name="Laba4.5" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Managers" expanded="True">
+                <Node name="CHnumbers" expanded="True" />
+              </Node>
+              <Node name="Storage" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Laba4.5 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

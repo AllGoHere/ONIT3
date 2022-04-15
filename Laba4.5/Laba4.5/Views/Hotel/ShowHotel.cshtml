@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Laba4._5.Storage.Entity.Hotel>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="wIdth=device-wIdth" />
+    <title>Show Hotels</title>
+</head>
+<body>
+    <h1>Отели</h1>
+    <table border="1" wIdth="100%" cellpadding="5">
+        <tr>
+            <th>Название отеля</th>
+            <th>Количество этажей в отеле</th>
+            <th>Количестов номеров</th>
+            <th>Количестов сотрудников</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        @{
+            foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.name</td>
+                    <td>@item.floors</td>
+                    <td>@item.KolNum.</td>
+                    <td>@item.kolsot</td>
+                    <td><a href="/Hotel/EditHotel/@item.Id">Редактировать</a> </td>
+                    <td><a href="/Hotel/Kick/@item.Id">Удалить</a></td>
+                    <td><a href="/Personal/ShowPersonals/@item.Id">Персонал</a></td>
+                    <td><a href="/CHnumber/ShowCHnumber/@item.Id">Номера</a></td>
+
+                </tr>
+            }
+        }
+
+        </table>
+    @using (Html.BeginForm("CreateHotel","Hotel"))
+    {
+        <div>
+            <input type="submit" value="Добавить новый отель"/>
+        </div>
+    }
+</body>
+</html>

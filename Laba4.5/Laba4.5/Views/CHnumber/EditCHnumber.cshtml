@@ -1,0 +1,28 @@
+﻿@model Laba4._5.Storage.Entity.CHnumber
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="wIdth=device-wIdth" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Edit", "Chnumber", FormMethod.Post))
+        {
+            <input Id="CHnumberId" name="ChnumberId" type="hIdden" value="@Model.Id" />
+            <label>Количество комнат:</label>
+            <input Id="rooms" type="text" name="rooms" value="@Model.rooms" /> <br />
+            <label>Количество спальных мест:</label>
+            <input Id="sleep" type="text" name="sleep" value="@Model.sleep." /> <br />
+            <input type="submit" value="Редактировать характеристику" /><br /><br />
+        }
+        <div>
+            <a href="/CHnumber/ShowCHnumber">Вернутся к списку характеристик</a><br /><br />
+        </div>
+    </div>
+</body>
+</html>

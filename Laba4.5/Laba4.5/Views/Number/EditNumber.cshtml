@@ -1,0 +1,28 @@
+﻿@model Laba4._5.Storage.Entity.Number
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="wIdth=device-wIdth" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Edit", "Number", FormMethod.Post))
+        {
+            <input Id="NumberId" name="NumberId" type="hIdden" value="@Model.Id" />
+            <label>На какаком этаже:</label>
+            <input Id="floor" type="text" name="floor" value="@Model.floor" /> <br />
+            <label>Номер на двери:</label>
+            <input Id="nomer" type="text" name="nomer" value="@Model.nomer" /> <br />
+            <input type="submit" value="Редактировать характеристику" /><br /><br />
+        }
+        <div>
+            <a href="/Number/ShowNumber">Вернутся к списку номеров</a><br /><br />
+        </div>
+    </div>
+</body>
+</html>
